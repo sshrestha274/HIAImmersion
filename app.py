@@ -1,19 +1,22 @@
 from flask import Flask, request, jsonify, render_template
+import json
 
 app = Flask(__name__)
 
 # Sample dataset (replace this with your actual data or database)
 # dataset = pd.read_csv("dataset.csv")
 
+file = open('dataset.json')
+dataset = json.load(file)
+
 @app.route('/')
 def main_page():
-    return render_template('main_page.html')
+    return render_template('main_page2.html')
 
 
 # Define a route to retrieve the dataset
 @app.route('/api/dataset', methods=['GET'])
 def get_dataset():
-
     
     min_age_filter = request.args.get('min_age')
     max_age_filter = request.args.get('max_age')

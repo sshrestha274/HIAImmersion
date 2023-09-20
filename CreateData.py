@@ -44,6 +44,7 @@ for i in range(10000):
     }
     dataset.append(record)
 
+
 json_object = json.dumps(dataset)
 
 with open('dataset.json', "w") as outfile:
