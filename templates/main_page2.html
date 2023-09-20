@@ -44,35 +44,120 @@
             text-align: center;
             padding: 10px;
         }
+        
     </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Code Card</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</head>
 </head>
 <body>
     <header>
-        <h1>Understanding the RESTful API</h1>
+        <h1>Tufts University Health Informatics and Analytics Immersion Fall 2023</h1>
     </header>
 
     <div class="container">
         <!-- Introduction -->
         <section>
             <h2>Introduction</h2>
-            <p>This webpage provides information about a RESTful API and how to access it.</p>
+            <p>Welcome students to the HIA Immersion Fall 2023. In this section you will learn about RESTful APIs which is commonly used to exchange information securely over the internet</p>
+            <p>This webpage provides basic information about RESTful APIs and access to a simulation data through the website.</p>
+            <p>You will learn how to read in data using the API and then use the dataset to perform statistical analysis and data visualization.</p>
+        </section>
+        <br>
+        <section>
+            <h2>Case studies</h2>
+            <div class="row"> 
+                <div class="col">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Case simulation 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Case simulation 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Case simulation 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            
         </section>
     
         <!-- What is a RESTful API? -->
         <section>
             <h2>What is a RESTful API?</h2>
             <p>A RESTful API is a way to interact with a web application or service by making HTTP requests. It is known for its simplicity, scalability, and statelessness.</p>
+            <p>Please check out this <a href="https://www.ibm.com/topics/rest-apis">link</a> to learn more about RESTful API</p>
         </section>
     
-        <!-- Functionality of the RESTful API -->
         <section>
-            <h2>Functionality of the RESTful API</h2>
-            <p>The RESTful API serves as a bridge to access and manipulate a dataset.</p>
-        </section>
+            <h2>How do we use python to access APIs to extract data</h2>
+            <p>Learn how to access the API programmatically using Python:</p>
+            
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Code Example</h5>
+                        <pre>
+            <code class="language-python">
+            # Your Python code goes here
+import requests
+
+# API endpoint
+api_url = "https://api.example.com/data"
+
+# Make a GET request
+response = requests.get(api_url)
+
+if response.status_code == 200:
+    # Parse JSON data
+    data = response.json()
     
+    # Extract and print data
+    if 'key' in data:
+        value = data['key']
+        print(f"Value extracted from API: {value}")
+    else:
+        print("Data key 'key' not found in API response.")
+else:
+    print(f"Error: {response.status_code} - Unable to fetch data from API.")
+            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Include code examples here -->
+        </section>
+
+
         <!-- Data Accessible through the API -->
         <section>
-            <h2>Data Accessible through the API</h2>
+            <h2>Example dataset: Emergency department visits </h2>
             <p>The dataset accessible via the API includes key variables such as:</p>
             <ul>
                 <li>id number</li>
@@ -91,11 +176,7 @@
         </section>
     
         <!-- Examples of Accessing the API Using Python -->
-        <section>
-            <h2>Examples of Accessing the API Using Python</h2>
-            <p>Learn how to access the API programmatically using Python:</p>
-            <!-- Include code examples here -->
-        </section>
+        
     
         <!-- Authentication and Security -->
         <section>
@@ -126,7 +207,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+        <p>Tufts University School of Medicine</p>
     </footer>
 </body>
 </html>
