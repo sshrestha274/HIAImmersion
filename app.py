@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_file
 import json
 
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Sample dataset (replace this with your actual data or database)
 # dataset = pd.read_csv("dataset.csv")
 
-file = open('dataset.json')
+file = open('dataset_10k.json')
 dataset = json.load(file)
 
 @app.route('/')
@@ -16,6 +16,14 @@ def main_page():
 @app.route('/resource_RESTAPI')
 def resource1():
     return render_template('Resource_RESTfulAPI.html')
+
+@app.route('/CaseStudy1')
+def case1():
+    return render_template('CaseStudy1.html')
+
+@app.route('/download/dataset_10k.csv')
+def download_file():
+    return send_file('dataset_10k.csv', as_attachment=True)
 
 
 # Define a route to retrieve the dataset
