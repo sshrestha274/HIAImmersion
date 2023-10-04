@@ -13,6 +13,10 @@ dataset = json.load(file)
 def main_page():
     return render_template('main_page2.html')
 
+@app.route('/resource_RESTAPI')
+def resource1():
+    return render_template('Resource_RESTfulAPI.html')
+
 
 # Define a route to retrieve the dataset
 @app.route('/api/dataset', methods=['GET'])

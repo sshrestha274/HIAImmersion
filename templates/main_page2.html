@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Understanding the RESTful API</title>
+    <title>HIA Immersion TUSM</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,9 +50,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Python Code Card</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+        
 </head>
 </head>
 <body>
@@ -63,151 +63,76 @@
     <div class="container">
         <!-- Introduction -->
         <section>
-            <h2>Introduction</h2>
-            <p>Welcome students to the HIA Immersion Fall 2023. In this section you will learn about RESTful APIs which is commonly used to exchange information securely over the internet</p>
-            <p>This webpage provides basic information about RESTful APIs and access to a simulation data through the website.</p>
-            <p>You will learn how to read in data using the API and then use the dataset to perform statistical analysis and data visualization.</p>
+            <div class="container mt-2">
+                <div class="card">
+                    <div class="card-body"> 
+                        <h2 class="card-title">Introduction</h2>
+                        
+                            <p>In the annals of modern healthcare, the shadow of racism looms as a pervasive and deeply troubling issue. The undeniable truth is that racism has cast a long, dark pall over the healthcare system, particularly within the confines of hospitals. Its pernicious influence is felt not only by patients but also by healthcare professionals who strive to provide equitable and compassionate care to all.</p>
+                            <p>In the medical setting, Black patients receive less pain treatment. In fact, a 2016 study by Hoffman and colleagues interviewed 121 White medical students and found 73% of them believing that Black people can tolerate higher pain due to genetic differences. Such false beliefs could in turn cause unjust pain treatments. For instance, Todd and colleagues found that in emergency rooms, only  57% of Black patients received analgesics for bone fractures, contrasting to 75% in White patients, despite similarity in the level of self-reported pain. Compared to White children, Black and Latino children are less likely to have their condition classified as an emergency, less likely to be admitted to hospital after an emergency room visit, and less likely to have blood tests, CT scans, and X-rays procedures prescribed. Such reports on healthcare injustice can go on and on.</p>
+                            <p>The consequences of racial bias in healthcare are profound and far-reaching. It has led to disparities—such as the ones mentioned above—in access to care, misdiagnoses, inadequate treatment, and even loss of life. The structural inequities that underlie these disparities are deeply embedded in the fabric of healthcare institutions, from hiring practices to patient care protocols.</p>
+                            <p>In this case study, we embark on a journey to explore the imperative of transforming hospitals into anti-racist institutions. By acknowledging the historical and contemporary roots of racism in healthcare, we aim to shed light on the pressing need for change. Through proactive measures, hospitals can dismantle systemic racism, foster inclusivity, and ultimately provide equitable care to all patients, regardless of their race or ethnicity. In doing so, we endeavor to unveil a path towards a future where healthcare is truly just and accessible to everyone, as it should be.</p>
+                    </div>
+
+                </div>
+            </div>
+           
         </section>
-        <br>
+        <div class="container">
+            <img class="img-fluid" src="/templates/5183000.jpg" alt="Image">
+        </div>
         <section>
-            <h2>Case studies</h2>
+            <div class="text-center"><h2>Case studies</h2></div>
             <div class="row"> 
                 <div class="col">
-                    <div class="container mt-5">
+                    <div class="container mt-2">
                         <div class="card">
                             <div class="card-body"> 
-                                <h5 class="card-title">Case simulation 1</h5>
+                                <div class="text-center"><h5 class="card-title">Case Study 1</h5></div>
+                                <div class="text-center"><h5 class="btn btn-primary", color="blue">Sickle Cell Anemia</h5></div>
                             </div>
+                            <ul>
+                                <li> You will download data from a web link</li>
+                                <li> Using any programming language, you will idenfity cases of Sickle Cell Anemia</li>
+                                <li> You will generate simple statistics</li>
+                                <li> You will perform simple hypothesis testing </li>
+                            </ul>    
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="container mt-5">
+                    <div class="container mt-2">
                         <div class="card">
                             <div class="card-body"> 
-                                <h5 class="card-title">Case simulation 2</h5>
+                                <div class="text-center"><h5 class="card-title">Case Study 2</h5></div>
+                                <div class="text-center"><h5 class="btn btn-primary", color="blue">Sickle Cell Anemia</h5></div>
                             </div>
+                            <ul>
+                                <li> You will download data from a web link</li>
+                                <li> Using any programming language, you will idenfity cases of Sickle Cell Anemia</li>
+                                <li> You will generate simple statistics</li>
+                                <li> You will perform simple hypothesis testing </li>
+                            </ul> 
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="container mt-5">
-                        <div class="card">
-                            <div class="card-body"> 
-                                <h5 class="card-title">Case simulation 3</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
 
             </div>
             
         </section>
     
-        <!-- What is a RESTful API? -->
-        <section>
-            <h2>What is a RESTful API?</h2>
-            <p>A RESTful API is a way to interact with a web application or service by making HTTP requests. It is known for its simplicity, scalability, and statelessness.</p>
-            <p>Please check out this <a href="https://www.ibm.com/topics/rest-apis">link</a> to learn more about RESTful API</p>
-        </section>
-    
-        <section>
-            <h2>How do we use python to access APIs to extract data</h2>
-            <p>Learn how to access the API programmatically using Python:</p>
-            
-            <div class="container mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Python Code Example</h5>
-                        <pre>
-            <code class="language-python">
-            # Your Python code goes here
-import requests
-
-# API endpoint
-api_url = "https://api.example.com/data"
-
-# Make a GET request
-response = requests.get(api_url)
-
-if response.status_code == 200:
-    # Parse JSON data
-    data = response.json()
-    
-    # Extract and print data
-    if 'key' in data:
-        value = data['key']
-        print(f"Value extracted from API: {value}")
-    else:
-        print("Data key 'key' not found in API response.")
-else:
-    print(f"Error: {response.status_code} - Unable to fetch data from API.")
-            </code>
-                        </pre>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Include code examples here -->
-        </section>
-
-
-        <!-- Data Accessible through the API -->
-        <section>
-            <h2>Example dataset: Emergency department visits </h2>
-            <p>The dataset accessible via the API includes key variables such as:</p>
-            <ul>
-                <li>id number</li>
-                <li>patient id number</li>
-                <li>date-time</li>
-                <li>hospital id number</li>
-                <li>id of doctor</li>
-                <li>diagnostic 1 to diagnostic 10</li>
-                <li>procedure 1 to procedure 10</li>
-                <li>patient complaint description text field</li>
-                <li>length of stay</li>
-                <li>discharge note</li>
-                <li>cost</li>
-                <li>patient rating post discharge</li>
-            </ul>
-        </section>
-    
         <!-- Examples of Accessing the API Using Python -->
         
-    
-        <!-- Authentication and Security -->
-        <section>
-            <h2>Authentication and Security</h2>
-            <p>Discuss any authentication mechanisms in place to access the API securely. Explain best practices for handling sensitive data when interacting with the API.</p>
-        </section>
-    
-        <!-- Use Cases -->
-        <section>
-            <h2>Use Cases</h2>
-            <p>Explore real-world use cases for the API and how it can benefit individuals, developers, or businesses.</p>
-        </section>
-    
-        <!-- Conclusion -->
-        <section>
-            <h2>Conclusion</h2>
-            <p>Summarize the key points discussed on the webpage and encourage readers to explore the API further.</p>
-        </section>
-    
-        <!-- Additional Resources -->
-        <section>
-            <h2>Additional Resources</h2>
-            <p>Find more information and resources related to the RESTful API:</p>
-            <!-- Include links to related resources here -->
-        </section>
-
-        <!-- ... (other sections) ... -->
-    </div>
-
     <footer>
         <p>Tufts University School of Medicine</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
