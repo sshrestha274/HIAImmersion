@@ -25,6 +25,10 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .navbar-nav {
+            margin-right: auto; /* Push the navbar to the left */
+        }
+
         h1 {
             color: #ffffff;
         }
@@ -60,17 +64,27 @@
         <h1>Tufts University Health Informatics and Analytics Immersion Fall 2023</h1>
     </header>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CaseStudy1">Case1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CaseStudy2">Case2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Resource">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <!-- Introduction -->
-        <section>
-            <div class="card">
-                <div class="card-body"> 
-                    <div class="text-center">
-                        <a class="btn btn-primary" href="/" >Home page</a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section>
         <p>This section you will learn about RESTful APIs which is commonly used to exchange information securely over the internet</p>
         <p>This webpage provides basic information about RESTful APIs and access to a simulation data through the website.</p>

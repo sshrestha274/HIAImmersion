@@ -6,6 +6,9 @@ app = Flask(__name__)
 # Sample dataset (replace this with your actual data or database)
 # dataset = pd.read_csv("dataset.csv")
 
+app.static_folder = 'static'  # Set the name of the static folder
+app.static_url_path = '/static'  # Set the URL path for static files
+
 file = open('dataset_10k.json')
 dataset = json.load(file)
 
@@ -13,13 +16,18 @@ dataset = json.load(file)
 def main_page():
     return render_template('main_page2.html')
 
-@app.route('/resource_RESTAPI')
-def resource1():
-    return render_template('Resource_RESTfulAPI.html')
+@app.route('/Resource')
+def resource():
+    return render_template('Resource.html')
 
 @app.route('/CaseStudy1')
 def case1():
     return render_template('CaseStudy1.html')
+
+@app.route('/CaseStudy2')
+def case2():
+    return render_template('CaseStudy2.html')
+
 
 @app.route('/download/dataset_10k.csv')
 def download_file():

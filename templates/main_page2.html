@@ -25,6 +25,10 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        .navbar-nav {
+            margin-right: auto; /* Push the navbar to the left */
+        }
+
         h1 {
             color: #ffffff;
         }
@@ -60,6 +64,25 @@
         <h1>Tufts University Health Informatics and Analytics Immersion Fall 2023</h1>
     </header>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CaseStudy1">Case1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CaseStudy2">Case2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Resource">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <!-- Introduction -->
         <section>
@@ -76,11 +99,14 @@
 
                 </div>
             </div>
-           
+        
+            
         </section>
         <div class="container">
-            <img class="img-fluid" src="/templates/5183000.jpg" alt="Image">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/Img_BLM.jpg') }}" alt="Image 1">
         </div>
+
+        <br>
         <section>
             <div class="text-center"><h2>Case studies</h2></div>
             <div class="row"> 
@@ -94,10 +120,10 @@
                                 </div>
                             </div>
                             <ul>
-                                <li> You will download data from a web link</li>
-                                <li> Using any programming language, you will idenfity cases of Sickle Cell Anemia</li>
+                                <li> In this exercise, you will use either R or Stata to perfrom basic statistical analysis.</li>
+                                <li> You will primarily explore pain scores and medications received by ED patients</li>
                                 <li> You will generate simple statistics</li>
-                                <li> You will perform simple hypothesis testing </li>
+                                <li> You will create report highlighting any difference in pain treatment by gender and race/ethnicity. </li>
                             </ul>    
                         </div>
                     </div>
@@ -131,10 +157,13 @@
     <footer>
         <p>Tufts University School of Medicine</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-r.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
