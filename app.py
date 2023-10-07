@@ -29,7 +29,7 @@ def case2():
     return render_template('CaseStudy2.html')
 
 
-@app.route('/download/dataset_10k.csv')
+@app.route('/download/dataset_10k_100723.csv')
 def download_file():
     return send_file('dataset_10k.csv', as_attachment=True)
 
