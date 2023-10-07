@@ -31,7 +31,7 @@ def case2():
 
 @app.route('/download/dataset_10k_100723.csv')
 def download_file():
-    return send_file('dataset_10k.csv', as_attachment=True)
+    return send_file('dataset_10k_100723.csv', as_attachment=True)
 
 
 # Define a route to retrieve the dataset
